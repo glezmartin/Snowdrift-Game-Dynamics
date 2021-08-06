@@ -1,4 +1,5 @@
 # Snowdrift Game Dynamics
+
 This project studies the evolution of the behavior of the individuals of a community in the snowdrift game as a function of the parameters of the game and the topology of the players' social network.
 
 ## Introduction
@@ -16,7 +17,10 @@ By varying the values of the parameters <S, T> we change the payout matrices, so
 <p align="center">
   <img src="reports/readme_figs/ST-plane.png"/>
 </p>
- 
+<p align = "center">
+Fig.1 - Game models as a function of the parameters <S,T>
+</p>
+
 ## The models
 
 When 0 < T < 1 and 0 < S &leq; 1 then regardless of the other player's decision it is in each player's interest to follow a cooperative strategy (Harmony game). If we consider a population of individuals playing a game with parameters <S, T> within these ranges, it is expected that the strategies of individuals will tend to vary towards collaboration.
@@ -25,4 +29,17 @@ If the parameters of the game are 1 < T < 2 and -1 < S < 0 we are faced with a g
 
 In the other cases, contrary to the previous ones, the decisions are not absolute and the ideal strategy depends on the strategy of the other player. In the case of stag hunting, an analogy can be made with two hunters who must choose between hunting a stag (higher value) and a hare (lower value). The stag needs both hunters to be hunted while each hunter can hunt a hare on his own. The proper strategy for this game is to do the same as the other player. The result will tend towards collaboration or non-collaboration depending on the value of each prey and depending on the parameters of the game.
 
-Finally in the snowdrift game we have an anti-coordination model where each player will try to do the opposite of what the other player does. This game can be understood as a confrontation where two drivers drive towards each other and in case that none of them turns away there will be a collision. So the best strategy is to do the opposite of what the other player does, either because if they both deviate nobody wins or because if neither deviates they both lose too much.
+Finally in the snowdrift game we have an anti-coordination model where each player will try to do the opposite of what the other player does. This game can be understood as a confrontation where two drivers drive towards each other and in case that none of them turns away there will be a collision. So the best strategy is to do the opposite of what the other player does, either because if they both deviate nobody wins or because if neither deviates they both lose too much. Because in this game model the best strategy is to do the opposite of your opponent the population will not tend to a dominant state, instead once the transitional state has passed the players' strategies will oscillate between collaborating and not collaborating.
+  
+Below is a graph showing the proportion of players with collaborative strategies in the population. The colors tending to red show games with parameters for which players assume collaborative strategies and in blue the opposite. As we can see the games Harmony (cooperate) and Prisoner's Dilemma (betray) have a clear dominant strategy as studied.
+  
+<p align="center">
+  <img src="reports/figures/density_plots/base.jpeg" width="57%" height="57%">
+</p>
+<p align = "center">
+Fig.2 - Ratio of coolaborators according to the game
+</p>
+
+Stag hunting has a mixed strategy on the one hand when the value of the shared stag is higher than a hare the players prefer to cooperate. While they will prefer not to cooperate when the hare is more valuable than half of the stag. When the Snowdrift game is shown we can see that due to the interest of each player to do the opposite of the other player, we will obtain populations with mixed strategies that will tend towards collaboration or non-collaboration depending on the type of game.
+
+
