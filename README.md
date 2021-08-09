@@ -54,10 +54,18 @@ This procedure will be repeated n times to reach a steady state where the change
 ## Fermi rule
   
 Fermi's rule is used to model the players' decision making to change strategy. With this rule, a neighbor j of player i is selected at random and the probability of player i acquiring the strategy of j is given by
- 
+  
+<p align="center">
+  <img src="reports/readme_figs/CodeCogsEqn.png"/>
+</p>
+
+The probability of player i to change strategy depends on the difference of the outcome measured by the payoff matrix. If player i obtains a better outcome than j he will be less likely to change strategy and vice versa. It is also possible to model the intensity with the parameter β
+  
 <p align="center">
   <img src="https://www4c.wolframalpha.com/Calculate/MSP/MSP69232500fcbh00c96h1a0000518ibbd9bc8be731?MSPStoreType=image/gif&s=47"/>
 </p>
- 
+<p align = "center">
+Fig.3 - Probability of player i to change strategy depending on payoffs
+</p>
 
 
