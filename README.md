@@ -42,12 +42,22 @@ Fig.2 - Ratio of coolaborators according to the game
 
 Stag hunting has a mixed strategy on the one hand when the value of the shared stag is higher than a hare the players prefer to cooperate. While they will prefer not to cooperate when the hare is more valuable than half of the stag. When the Snowdrift game is shown we can see that due to the interest of each player to do the opposite of the other player, we will obtain populations with mixed strategies that will tend towards collaboration or non-collaboration depending on the type of game.
 
-## The Conceptual Idea
+## The conceptual idea
 
 The objective of this project is to study the Snowdrift game model for different networks. To do so, we will start from a network G where each node n<sub>i</sub> will represent a player. Each node will initially have a state associated with the strategy it will initially follow (cooperating or non-cooperating).
 
 Once the experiment is initialized, each node ni will be confronted with one of its neighbors. After this, the node ni will have the option to change its strategy according to the results of the payoff matrix that it has obtained in comparison with its neighbor (if you can't beat them, join them).
 
 This procedure will be repeated n times to reach a steady state where the changes in the proportion of cooperators in the population has stabilized. The idea is therefore to study as a function of various parameters such as the game parameters themselves and the initial density of players with a cooperative strategy how the topology of the network influences the speed of diffusion of strategies.
+
+
+## Fermi rule
+  
+Fermi's rule is used to model the players' decision making to change strategy. With this rule, a neighbor j of player i is selected at random and the probability of player i acquiring the strategy of j is given by
+ 
+<p align="center">
+  <img src="https://www4c.wolframalpha.com/Calculate/MSP/MSP69232500fcbh00c96h1a0000518ibbd9bc8be731?MSPStoreType=image/gif&s=47"/>
+</p>
+ 
 
 
